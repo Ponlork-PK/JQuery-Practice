@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard-Events</title>
+</head>
+<body>
+    <h1>Keyboard Events</h1>
+    <input type="text" id="Keyboard-input" placeholder="Type something here">
+    <script>
+        $(document).ready(function () {
+            $('#Keyboard-input').on('keydown', function (e) {
+                console.log(`Key down: ${e.key}`);
+            });
+            
+            $('#Keyboard-input').on('keyup', function (e) {
+                console.log(`Key up: ${e.key}`);
+            });
+        });
+    </script>
+</body>
+</html>
